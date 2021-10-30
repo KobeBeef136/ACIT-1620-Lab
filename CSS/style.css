@@ -1,0 +1,69 @@
+/* import fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Zilla+Slab:ital,wght@1,300&display=swap");
+
+/*
+Color codes
+#315659
+#2978A0
+#BCAB79
+#C6E0FF
+*/
+
+/* rem is font size relative to html */
+h1 {
+  font-size: 3rem;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 25px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  background-color: #bcab79;
+  text-decoration: underline;
+}
+
+.zilla_slab {
+  font-size: 1rem;
+  font-family: "Zilla Slab", serif;
+}
+
+.nav_class {
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav {
+  border-bottom: black solid 2px;
+  width: 100%;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.pale_blue {
+  background-color: #c6e0ff;
+}
+
+.dark_cyan {
+  color: #315659;
+}
+
+/* image size */
+img {
+  width: 200px;
+}
