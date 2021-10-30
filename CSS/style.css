@@ -1,15 +1,11 @@
 /* import fonts from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Zilla+Slab:ital,wght@1,300&display=swap");
 
-/*
-Color codes
-#315659
-#2978A0
-#BCAB79
-#C6E0FF
-*/
+.zilla_slab {
+  font-size: 1rem;
+  font-family: "Zilla Slab", serif;
+}
 
-/* rem is font size relative to html */
 h1 {
   font-size: 3rem;
   font-family: "Ubuntu", sans-serif;
@@ -27,17 +23,12 @@ a {
 }
 
 a:visited {
-  color: red;
+  color: #f26627;
 }
 
 a:hover {
-  background-color: #bcab79;
+  background-color: #325d79;
   text-decoration: underline;
-}
-
-.zilla_slab {
-  font-size: 1rem;
-  font-family: "Zilla Slab", serif;
 }
 
 .nav_class {
@@ -46,7 +37,7 @@ a:hover {
 }
 
 nav {
-  border-bottom: black solid 2px;
+  border-bottom: #325d79 solid 2px;
   width: 100%;
 }
 
@@ -55,15 +46,17 @@ nav {
   top: 0;
 }
 
-.pale_blue {
-  background-color: #c6e0ff;
+.background {
+  background-color: #9bd7d1;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
 }
 
-.dark_cyan {
-  color: #315659;
+.text_color {
+  color: #efeeee;
 }
 
 /* image size */
 img {
-  width: 200px;
+  width: 350px;
 }
