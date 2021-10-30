@@ -9,7 +9,6 @@
 h1 {
   font-size: 3rem;
   font-family: "Ubuntu", sans-serif;
-  margin-top: 25px;
 }
 
 h2 {
@@ -17,18 +16,18 @@ h2 {
   font-family: "Ubuntu", sans-serif;
 }
 
-a {
-  font-size: 1rem;
-  font-family: "Ubuntu", sans-serif;
+header {
+  width: 100%;
+  display: flex;
+
 }
 
-a:visited {
-  color: #f26627;
-}
-
-a:hover {
+nav {
+  border-bottom: #325d79 solid 2px;
   background-color: #325d79;
-  text-decoration: underline;
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 
 .nav_class {
@@ -36,14 +35,24 @@ a:hover {
   padding: 10px;
 }
 
-nav {
-  border-bottom: #325d79 solid 2px;
-  width: 100%;
-}
-
 .sticky {
   position: sticky;
   top: 0;
+}
+
+a {
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #efeeee;
+}
+
+a:visited {
+  color: #f26627;
+}
+
+a:hover {
+  background-color: #f9a26c;
+  text-decoration: underline;
 }
 
 .background {
@@ -58,5 +67,32 @@ nav {
 
 /* image size */
 img {
-  width: 350px;
+  width: 450px;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 20rem;
+  grid-template-rows: 8rem 4rem 2rem;
+  grid-template-areas:
+    "grid_h"
+    "grid_p1"
+    "grid_p2";
+  width: 100%;
+  justify-content: center;
+}
+
+.grid_h {
+  grid-area: grid_h;
+  justify-self: center;
+}
+
+.grid_p1 {
+  grid-area: grid_p1;
+  justify-self: center;
+}
+
+.grid_p2 {
+  grid-area: grid_p2;
+  justify-self: center;
 }
