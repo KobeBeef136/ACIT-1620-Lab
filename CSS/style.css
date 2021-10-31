@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Zilla+Slab:ital,wght@1,300&display=swap");
 
 .zilla_slab {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: "Zilla Slab", serif;
 }
 
@@ -19,10 +19,11 @@ h2 {
 nav {
   border-bottom: #325d79 solid 2px;
   background-color: #325d79;
+  border-radius: 10px;
   width: 100%;
   display: flex;
+  align-content: center;
   justify-content: space-between;
-  align-items: center;
 }
 
 .nav_class {
@@ -48,9 +49,9 @@ a:visited {
 a:hover {
   background-color: #f9a26c;
   text-decoration: underline;
+  border-radius: 10px;
 }
-
-.background {
+body {
   background-color: #9bd7d1;
   background-image: url(../images/background.jpg);
   background-size: cover;
@@ -60,28 +61,27 @@ a:hover {
   color: #efeeee;
 }
 
-/* image size */
 img {
-  width: 450px;
+  width: 400px;
 }
 
 .logo {
     width: 5%;
 }
 
-.grid_container {
+.grid_index {
+  width: 100%;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: repeat(3, auto);
   grid-template-areas:
     "grid_h"
     "grid_p1"
     "grid_p2";
-  width: 100%;
   justify-content: center;
 }
 
-.grid_h {
+.grid_h1 {
   grid-area: grid_h;
   justify-self: center;
 }
@@ -94,4 +94,53 @@ img {
 .grid_p2 {
   grid-area: grid_p2;
   justify-self: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  margin: 5px;
+}
+
+.container h1 {
+  display: flex;
+  grid-column: 1 / 5;
+  grid-row: 1;
+  justify-content: center;
+}
+
+.container img {
+  display: flex;
+  grid-column: 1 / 3;
+  grid-row: 2 ;
+  justify-self: center;
+  border-radius: 20px;
+  border: #325D79 solid 5px;
+}
+
+.container p {
+  display: flex;
+  grid-column: 3 / 5;
+  grid-row: 2;
+  text-align: center;
+  align-self: center;
+  padding: 10%;
+}
+
+.container h2 {
+  display: flex;
+  grid-column: 1 / 5;
+  grid-row: 3;
+  justify-content: center;
+  align-self: center;
+}
+
+.container ol {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 5;
+  grid-row: 4;
+  justify-self: center;
+  align-self: center;
 }
