@@ -1,6 +1,8 @@
 # ACIT-1620-Lab
 
-Personal Website
+ACIT 1620 Lab - Personal Website
+Kobe Kung
+A01270308
 
 Color Palette
 #F26627
